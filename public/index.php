@@ -1,9 +1,4 @@
 <!doctype html>
-<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Product" id="ie6" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
-<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie7" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
-<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie8" class="ie ie-old" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
-<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Product" id="ie9" class="ie" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
-<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Product" lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
 <head>
 
     <!-- Meta -->
@@ -18,10 +13,6 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900">
-    <!--[if lt IE 9]>
-        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <style>
         ::selection {
             background: yellow;
@@ -221,7 +212,7 @@ main {
                             <h1>
                                 Welcome to Cognac Box
                             </h1>
-                            <p>Intial Release 1.0.0</p>
+                            <p>Release 2.0.0</p>
                         </div>
                     </div>
                 </div>
@@ -272,19 +263,19 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>PHP</strong></td>
-                                    <td>7.4.1</td>
+                                    <td>7.4.3</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Go</strong></td>
                                     <td>
-                                        1.13.4
+                                        1.4
                                     </td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Vim</strong></td>
-                                    <td>8.0</td>
+                                    <td>8.2</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -344,7 +335,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>PHP</strong></td>
-                                    <td>7.2.2</td>
+                                    <td>7.4.3</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -402,7 +393,7 @@ main {
                             <table class="table table-responsive table-striped table-hover">
                                 <tr>
                                     <th colspan="3">
-                                        <h3>MySQL 5.7</h3>
+                                        <h3>MySQL 8.0.19</h3>
                                     </th>
                                 </tr>
                                 <tr>
@@ -457,7 +448,7 @@ main {
                             <table class="table table-responsive table-striped table-hover">
                                 <tr>
                                     <th colspan="3">
-                                        <h3>SQLite 3.11.0</h3>
+                                        <h3>SQLite 3.22</h3>
                                     </th>
                                 </tr>
                                 <tr>
@@ -620,7 +611,7 @@ main {
 
                                                     $msg = 'Email testing is cool locally';
 
-                                                    mail('nick@scotch.io', 'Test email', $msg);
+                                                    mail('test@test.com', 'Test email', $msg);
 
                                                     ?&gt;
                                                 </textarea>
