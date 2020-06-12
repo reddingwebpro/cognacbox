@@ -19,6 +19,11 @@ A pre-configured Vagrant Box with a full array of features to get you up and run
 * GoLang: 1.4
 * VirtualBox Host Additions for version 6.1
 
+
+# Version 2.2
+
+* Updated to fix the issue with "failed to create the raw output file"
+
 # Version 2.0
 
 * General update of all features to latest available as of March 2020
