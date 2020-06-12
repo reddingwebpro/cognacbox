@@ -212,7 +212,7 @@ main {
                             <h1>
                                 Welcome to Cognac Box
                             </h1>
-                            <p>Release 2.0.0</p>
+                            <p>Release 2.2.0</p>
                         </div>
                     </div>
                 </div>
