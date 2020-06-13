@@ -212,7 +212,7 @@ main {
                             <h1>
                                 Welcome to Cognac Box
                             </h1>
-                            <p>Release 2.2.0</p>
+                            <p>Release 2.3.0 - June 2020</p>
                         </div>
                     </div>
                 </div>
@@ -263,7 +263,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>PHP</strong></td>
-                                    <td>7.4.3</td>
+                                    <td>7.4.7</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -280,7 +280,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>Git</strong></td>
-                                    <td>2.7.4</td>
+                                    <td>2.17.1</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -335,7 +335,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>PHP</strong></td>
-                                    <td>7.4.3</td>
+                                    <td>7.4.7</td>
                                     <td>✅</td>
                                 </tr>
                                 <tr>
@@ -393,7 +393,7 @@ main {
                             <table class="table table-responsive table-striped table-hover">
                                 <tr>
                                     <th colspan="3">
-                                        <h3>MySQL 8.0.19</h3>
+                                        <h3>MySQL 8.0.20</h3>
                                     </th>
                                 </tr>
                                 <tr>
@@ -503,7 +503,7 @@ main {
                                 </tr>
                                 <tr>
                                     <td><strong>Version</strong></td>
-                                    <td>3.0.6</td>
+                                    <td>5.2.1</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3">
