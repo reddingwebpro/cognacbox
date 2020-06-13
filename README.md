@@ -18,6 +18,8 @@ A pre-configured Vagrant Box with a full array of features to get you up and run
 * NodeJS: 13.14.0 (NPM 6.13.7)
 ** gulp, grunt, bower, yo, browser-sync, browserify, pm2, webpack
 * GoLang: 1.14
+* Python: 2.7.17
+* OpenSSL: 1.1.1g
 * VirtualBox Host Additions for version 6.1.8
 
 
