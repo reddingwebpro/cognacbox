@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.box = "reddingwebpro/cognacbox"
     config.vm.hostname = "cognacbox"
-	config.vm.box_version = "2.3"
+	config.vm.box_version = "3.0"
 	config.vm.boot_timeout = 600
     config.vm.network "forwarded_port", guest: 80, host: 8080
     config.vm.network "private_network", ip: "192.168.33.10"
