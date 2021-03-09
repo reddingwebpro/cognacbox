@@ -31,6 +31,7 @@ A pre-configured Vagrant Box with a full array of features to get you up and run
 
 # Version 3.0
 * NEW: PHP 8.0 and Composer 2.0 and Yarn 0.32
+* HTTPS/SSL: Self Signed https enabled by default (access either http or https content)
 * General update of all features to latest available as of March 2021
 
 # Version 2.3
