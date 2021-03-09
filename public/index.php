@@ -136,22 +136,6 @@
             margin: 30px 0;
         }
 
-        .credentials {
-            display: block;
-            padding: 10px 25px;
-            text-align: left;
-        }
-        .credentials input {
-            color: #15488c !important;
-            font-weight: 600;
-            height: 50px !important;
-            transition: all 225ms ease;
-        }
-        .credentials input:hover,
-        .credentials input:focus {
-            padding-left: 25px;
-        }
-
         footer {
             font-size: 100px;
             text-align: center;
@@ -161,13 +145,6 @@
         @media (max-width: 1199px) {
             main {
                 overflow: hidden;
-            }
-        }
-        @media (max-width: 767px) {
-            .navbar .container-fluid { padding-right: 15px; }
-            header h1 { font-size: 45px; }
-            footer {
-                font-size: 40px;
             }
         }
     </style>
@@ -374,56 +351,17 @@
                                 </th>
                             </tr>
                             <tr>
-                                <?php
-                                $mysql_exists = FALSE;
-                                if (extension_loaded('mysql') or extension_loaded('mysqli')) :
-                                    $mysql_exists = TRUE;
-                                endif;
-                                $mysqli = @new mysqli('localhost', 'root', 'root');
-                                $mysql_running = TRUE;
-                                if (mysqli_connect_errno()) {
-                                    $mysql_running = FALSE;
-                                } else {
-                                    $mysql_version = $mysqli->server_info;
-                                }
-
-                                $mysqli->close();
-                                ?>
                                 <td><strong>Connected?</strong></td>
-                                <td>
-                                    <?php echo ($mysql_running ? '✅' : '❌'); ?>
-                                </td>
+                                <td>✅</td>
                             </tr>
                             <tr>
-                                <td colspan="3">
-                                    <div class="credentials">
-                                        <div class="form-group">
-                                            <label>
-                                                Hostname
-                                                <input type="text" class="form-control" value="localhost">
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>
-                                                Username
-                                                <input type="text" class="form-control" value="root">
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>
-                                                Password
-                                                <input type="text" class="form-control" value="root">
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>
-                                                Database
-                                                <input type="text" class="form-control" value="cognacbox">
-                                            </label>
-                                        </div>
-                                    </div>
-                                </td>
+                                <td>Hostname</td>
+                                <td>localhost</td>
                             </tr>
+                            <tr><td>Username</td><td>root</td></tr>
+                            <tr><td>Password</td><td>root</td></tr>
+                            <tr><td>Database</td><td>cognacbox</td></tr>
+                            <tr><td colspan="2"><a href="https://www.reddingitpro.com/2021/01/08/connect-mysql-workbench-to-vagrant-box-over-ssl/">How to connect to DB from host workstation or MySQL Workbench</td></tr>
                         </table>
                     </div>
                 </div>
@@ -442,13 +380,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3">
-                                    <div class="credentials">
-                                        <div class="form-group">
-                                            <label>Example</label>
-                                            <input type="text" class="form-control" value="$db = new SQLite3('your.db');">
-                                        </div>
-                                    </div>
+                                <td colspan="2">
+                                    $db = new SQLite3('your.db');
                                 </td>
                             </tr>
                         </table>
@@ -492,20 +425,8 @@
                                 <td><strong>Version</strong></td>
                                 <td>5.2.1</td>
                             </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <div class="credentials">
-                                        <div class="form-group">
-                                            <label>Hostname</label>
-                                            <input type="text" class="form-control" value="localhost">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Port</label>
-                                            <input type="text" class="form-control" value="6379">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            <tr><td>Hostname</td><td>localhost</td></tr>
+                            <tr><td>Port</td><td>6379</td></tr>
                         </table>
                     </div>
                 </div>
@@ -527,41 +448,12 @@
                                     <h3>How to Connect</h3>
                                 </th>
                             </tr>
-                            <tr>
-                                <td>
-                                    <div class="credentials">
-                                        <div class="form-group">
-                                            <label>Easy Way</label>
-                                            <input type="text" class="form-control" value="vagrant ssh">
-                                        </div>
-                                        <br>
-                                        <h4 class="text-center">Or</h4>
-                                        <br>
-                                        <div class="form-group">
-                                            <label>SSH Host</label>
-                                            <input type="text" class="form-control" value="127.0.0.1">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>SSH User</label>
-                                            <input type="text" class="form-control" value="vagrant">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>SSH Password</label>
-                                            <input type="text" class="form-control" value="vagrant">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>SSH Port</label>
-                                            <input type="text" class="form-control" value="2222">
-                                        </div>
-                                        <hr>
-                                        <h4>"This isn't working!!!!" - you</h4>
-                                        <p>Vagrant might automatically try to use something else if it's blocked. To get the credentials just do:</p>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" value="vagrant ssh-config">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            <tr><td>Easy Way</td><td>Vagrant SSH</td></tr>
+                            <tr><td colspan="2"><strong>Alternate Method</strong></td></tr>
+                            <tr><td>SSH Host</td><td>127.0.0.1</td></tr>
+                            <tr><td>Port</td><td>2222</td></tr>
+                            <tr><td>SSH User</td><td>vagrant</td></tr>
+                            <tr><td>SSH Password</td><td>vagrant</td></tr>
                         </table>
                     </div>
                 </div>
@@ -585,26 +477,8 @@
                                     <p>This is turned on automatically now. Just visit the URL below:</p>
                                     <br>
                                     <p><a href="http://192.168.33.10:8025">http://192.168.33.10:8025</a></p>
+                                    <p>Note: Prior to CognacBox 3.0 it only captured mail sent to port 1025. As of v 3.0 it will capture mail sent to port 25 which is the detail PHP mail port.</p>
                                 </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <br>
-                                    <div class="credentials">
-                                        <div class="form-group">
-                                            <label>Test it yourself</label>
-                                            <textarea rows="8" class="form-control">
-                                                    &lt;?php
-
-                                                    $msg = 'Email testing is cool locally';
-
-                                                    mail('test@test.com', 'Test email', $msg);
-
-                                                    ?&gt;
-                                                </textarea>
-                                        </div>
-                                    </div>
-                                </td>
                             </tr>
                         </table>
                     </div>
