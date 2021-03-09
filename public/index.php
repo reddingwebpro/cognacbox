@@ -477,7 +477,7 @@
                                     <p>This is turned on automatically now. Just visit the URL below:</p>
                                     <br>
                                     <p><a href="http://192.168.33.10:8025">http://192.168.33.10:8025</a></p>
-                                    <p>Note: Prior to CognacBox 3.0 it only captured mail sent to port 1025. As of v 3.0 it will capture mail sent to port 25 which is the detail PHP mail port.</p>
+                                    <p>Note: Prior to CognacBox 3.0 it only captured mail sent to port 1025. As of v 3.0 it will capture all mail send from PHP 8.0 (FPM/CGI/CLI).</p>
                                 </th>
                             </tr>
                         </table>
