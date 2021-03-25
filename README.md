@@ -29,6 +29,10 @@ A pre-configured Vagrant Box with a full array of features to get you up and run
 
 ## Release Notes
 
+# Version 3.0.1
+* Resolved cosmetic motd bug #8
+* Updated to latest apt updates/upgrades
+
 # Version 3.0
 * NEW: PHP 8.0 and Composer 2.0 and Yarn 0.32
 * HTTPS/SSL: Self Signed https enabled by default (access either http or https content)

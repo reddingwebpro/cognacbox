@@ -162,7 +162,7 @@
                         <h1>
                             Welcome to Cognac Box
                         </h1>
-                        <p>Release 3.0 - March 2021</p>
+                        <p>Release 3.0.1 - March 2021</p>
                     </div>
                 </div>
             </div>
