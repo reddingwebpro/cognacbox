@@ -4,12 +4,11 @@ A super-simple LAMP stack for Vagrant.
 
 A pre-configured Vagrant Box with a full array of features to get you up and running with Vagrant in no time.
 
-
 ## Features
 
 * OS: Ubuntu-18.04-LTS (Bionic) ** Long term support through 2028
 * APACHE: 2.4.46 with headers, rewrite, includes, expires
-* PHP: PHP 8.0.3 with Zend Engine v4.0.3 (Zend OPCache v8.0.3)
+* PHP: PHP 8.0.3 with Zend Engine v4.0.3 (Zend OPCache v8.0.3) b
   * PHP Modules: bcmath, bz2, cgi, gd, imap, intl, mbstring, odbc, pspell, tidy, xmlrpc, zip
   * Other stuff: Enchant 1.60, Curl 7.58, ImageMagick 3.4.4 (6.9.7-4), Composer 2.0
 * VIM: 8.2
@@ -47,3 +46,6 @@ A pre-configured Vagrant Box with a full array of features to get you up and run
 
 # Version 2.0
 * General update of all features to latest available as of March 2020
+
+## Known Issues
+* MySQL PGP key issue when running apt-get update, will be fixed in next release
