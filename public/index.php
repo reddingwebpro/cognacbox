@@ -162,7 +162,7 @@
                         <h1>
                             Welcome to Cognac Box
                         </h1>
-                        <p>Release 3.0.1 - March 2021</p>
+                        <p>Release 3.1 - March 2022</p>
                     </div>
                 </div>
             </div>
@@ -208,23 +208,23 @@
                             </tr>
                             <tr>
                                 <td><strong>Web Server</strong></td>
-                                <td>Apache 2.4.46</td>
+                                <td>Apache 2.4.52</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>PHP</strong></td>
-                                <td>8.0.3</td>
+                                <td>8.0.16 (Default for web)<br>8.1.3 (available)</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Perl</strong></td>
-                                <td>5.26.1</td>
+                                <td>5.26</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Go</strong></td>
                                 <td>
-                                    1.16
+                                    1.17
                                 </td>
                                 <td>✅</td>
                             </tr>
@@ -235,17 +235,17 @@
                             </tr>
                             <tr>
                                 <td><strong>Git</strong></td>
-                                <td>2.17.1</td>
+                                <td>2.17</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Imagemagick</strong></td>
-                                <td>3.4.4 (6.9.7-4)</td>
+                                <td>3.6.0 (6.9.7-4)</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Curl</strong></td>
-                                <td>7.58.0-2</td>
+                                <td>7.58</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
@@ -290,7 +290,7 @@
                             </tr>
                             <tr>
                                 <td><strong>PHP</strong></td>
-                                <td>8.0.3</td>
+                                <td>8.0.16 & 8.1.3</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
@@ -318,7 +318,7 @@
                                 </th>
                             </tr>
                             <tr>
-                                <td>Composer (new v2.0)</td>
+                                <td>Composer (2.2)</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
@@ -347,7 +347,7 @@
                         <table class="table table-responsive table-striped table-hover">
                             <tr>
                                 <th colspan="3">
-                                    <h3>MySQL 8.0.23</h3>
+                                    <h3>MySQL 8.0.28</h3>
                                 </th>
                             </tr>
                             <tr>
@@ -423,7 +423,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Version</strong></td>
-                                <td>5.2.1</td>
+                                <td>5.3.6</td>
                             </tr>
                             <tr><td>Hostname</td><td>localhost</td></tr>
                             <tr><td>Port</td><td>6379</td></tr>
