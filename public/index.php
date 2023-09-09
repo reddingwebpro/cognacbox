@@ -13,17 +13,21 @@
             background: yellow;
             color: #000;
         }
+
         body {
             font-family: 'Nunito', sans-serif;
             background: #eef1f5;
         }
+
         a {
             transition: all 225ms ease;
             text-decoration: none !important;
         }
+
         section, header, footer {
             position: relative;
         }
+
         main {
             max-width: 1600px;
             margin: 0 auto;
@@ -31,16 +35,18 @@
         }
 
         .cognac {
-            box-shadow: 0 30px 100px 0 rgba(51,51,55,.15);
+            box-shadow: 0 30px 100px 0 rgba(51, 51, 55, .15);
             background: #fff;
             border: solid 1px rgba(119, 119, 119, 0.21);
             border-radius: 4px !important;
             overflow: hidden;
             margin: 10px 0;
         }
+
         .add-padding {
             padding: 5% 0;
         }
+
         .add-padding-fat {
             padding: 15% 5%;
         }
@@ -50,6 +56,7 @@
             padding: 15px;
             background-color: #0f0a17 !important;
         }
+
         header h1 {
             margin: 0;
             font-weight: 800;
@@ -88,7 +95,7 @@
         table {
             margin: 0 !important;
             font-size: 135%;
-            box-shadow: 0 1px 5px 0 rgba(51,51,55,.15);
+            box-shadow: 0 1px 5px 0 rgba(51, 51, 55, .15);
         }
 
         table, table * {
@@ -162,7 +169,7 @@
                         <h1>
                             Welcome to Cognac Box
                         </h1>
-                        <p>Release 3.0.1 - March 2021</p>
+                        <p>Release 4.0 - September 2023</p>
                     </div>
                 </div>
             </div>
@@ -203,29 +210,27 @@
                             </tr>
                             <tr>
                                 <td><strong>OS</strong></td>
-                                <td>Ubuntu 18.04 LTS<br/>(Long Term Support through 2028)</td>
+                                <td>Ubuntu 22.04 LTS<br/>(Long Term Support through 2027)</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Web Server</strong></td>
-                                <td>Apache 2.4.46</td>
+                                <td>Apache 2.4</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>PHP</strong></td>
-                                <td>8.0.3</td>
+                                <td>8.2</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Perl</strong></td>
-                                <td>5.26.1</td>
+                                <td>5.34</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Go</strong></td>
-                                <td>
-                                    1.16
-                                </td>
+                                <td>1.21</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
@@ -235,27 +240,27 @@
                             </tr>
                             <tr>
                                 <td><strong>Git</strong></td>
-                                <td>2.17.1</td>
+                                <td>2.34</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Imagemagick</strong></td>
-                                <td>3.4.4 (6.9.7-4)</td>
+                                <td>6.9</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Curl</strong></td>
-                                <td>7.58.0-2</td>
+                                <td>7.81</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>Beanstalkd</strong></td>
-                                <td>1.10</td>
+                                <td>1.12</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
                                 <td><strong>ngrok</strong></td>
-                                <td>2.3.35</td>
+                                <td>3.3</td>
                                 <td>✅</td>
                             </tr>
                         </table>
@@ -290,7 +295,7 @@
                             </tr>
                             <tr>
                                 <td><strong>PHP</strong></td>
-                                <td>8.0.3</td>
+                                <td>8.2</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
@@ -302,10 +307,12 @@
                             foreach ($modules as $extension) :
                                 ?>
                                 <tr>
-                                    <td colspan="2"><?php echo $extension; ?></td>
+                                    <td colspan="2"><?php
+                                        echo $extension; ?></td>
                                     <td><i class="fa fa-check"></i></td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php
+                            endforeach; ?>
                         </table>
                     </div>
                 </div>
@@ -318,7 +325,7 @@
                                 </th>
                             </tr>
                             <tr>
-                                <td>Composer (new v2.0)</td>
+                                <td>Composer (new v2.6)</td>
                                 <td>✅</td>
                             </tr>
                             <tr>
@@ -347,7 +354,7 @@
                         <table class="table table-responsive table-striped table-hover">
                             <tr>
                                 <th colspan="3">
-                                    <h3>MySQL 8.0.23</h3>
+                                    <h3>MySQL 8.0</h3>
                                 </th>
                             </tr>
                             <tr>
@@ -358,10 +365,22 @@
                                 <td>Hostname</td>
                                 <td>localhost</td>
                             </tr>
-                            <tr><td>Username</td><td>root</td></tr>
-                            <tr><td>Password</td><td>root</td></tr>
-                            <tr><td>Database</td><td>cognacbox</td></tr>
-                            <tr><td colspan="2"><a href="https://www.reddingitpro.com/2021/01/08/connect-mysql-workbench-to-vagrant-box-over-ssl/">How to connect to DB from host workstation or MySQL Workbench</td></tr>
+                            <tr>
+                                <td>Username</td>
+                                <td>root</td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>root</td>
+                            </tr>
+                            <tr>
+                                <td>Database</td>
+                                <td>cognacbox</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><a href="https://www.reddingitpro.com/2021/01/08/connect-mysql-workbench-to-vagrant-box-over-ssl/">How to connect to DB from host
+                                        workstation or MySQL Workbench</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
@@ -370,13 +389,14 @@
                         <table class="table table-responsive table-striped table-hover">
                             <tr>
                                 <th colspan="3">
-                                    <h3>SQLite 3.22</h3>
+                                    <h3>SQLite 3.37</h3>
                                 </th>
                             </tr>
                             <tr>
                                 <td><strong>Connected?</strong></td>
                                 <td>
-                                    <?php echo (extension_loaded('sqlite3') ? '✅' : '❌'); ?>
+                                    <?php
+                                    echo(extension_loaded('sqlite3') ? '✅' : '❌'); ?>
                                 </td>
                             </tr>
                             <tr>
@@ -415,7 +435,8 @@
                             <tr>
                                 <td><strong>Connected?</strong></td>
                                 <td>
-                                    <?php try {
+                                    <?php
+                                    try {
                                         echo($redis->ping() ? '✅' : '❌');
                                     } catch (RedisException $e) {
                                     } ?>
@@ -423,10 +444,16 @@
                             </tr>
                             <tr>
                                 <td><strong>Version</strong></td>
-                                <td>5.2.1</td>
+                                <td>6.0</td>
                             </tr>
-                            <tr><td>Hostname</td><td>localhost</td></tr>
-                            <tr><td>Port</td><td>6379</td></tr>
+                            <tr>
+                                <td>Hostname</td>
+                                <td>localhost</td>
+                            </tr>
+                            <tr>
+                                <td>Port</td>
+                                <td>6379</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
@@ -448,12 +475,29 @@
                                     <h3>How to Connect</h3>
                                 </th>
                             </tr>
-                            <tr><td>Easy Way</td><td>Vagrant SSH</td></tr>
-                            <tr><td colspan="2"><strong>Alternate Method</strong></td></tr>
-                            <tr><td>SSH Host</td><td>127.0.0.1</td></tr>
-                            <tr><td>Port</td><td>2222</td></tr>
-                            <tr><td>SSH User</td><td>vagrant</td></tr>
-                            <tr><td>SSH Password</td><td>vagrant</td></tr>
+                            <tr>
+                                <td>Easy Way</td>
+                                <td>Vagrant SSH</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><strong>Alternate Method</strong></td>
+                            </tr>
+                            <tr>
+                                <td>SSH Host</td>
+                                <td>127.0.0.1</td>
+                            </tr>
+                            <tr>
+                                <td>Port</td>
+                                <td>2222</td>
+                            </tr>
+                            <tr>
+                                <td>SSH User</td>
+                                <td>vagrant</td>
+                            </tr>
+                            <tr>
+                                <td>SSH Password</td>
+                                <td>vagrant</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
@@ -477,7 +521,8 @@
                                     <p>This is turned on automatically now. Just visit the URL below:</p>
                                     <br>
                                     <p><a href="http://192.168.33.10:8025">http://192.168.33.10:8025</a></p>
-                                    <p>Note: Prior to CognacBox 3.0 it only captured mail sent to port 1025. As of v 3.0 it will capture all mail send from PHP 8.0 (FPM/CGI/CLI).</p>
+                                    <p>Note: Prior to CognacBox 3.0 it only captured mail sent to port 1025. As of v 3.0 it will capture all mail send from PHP
+                                        (FPM/CGI/CLI).</p>
                                 </th>
                             </tr>
                         </table>
