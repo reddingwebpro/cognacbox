@@ -21,6 +21,8 @@ A pre-configured Vagrant Box with a full array of features to get you up and run
 * OpenSSL: 1.1.1j
 * VirtualBox Host Additions for version 6.1.18
 
+## Older Releases
+* If you need PHP 7.4 and/or PHP 8.0 look for Version 3.0.1 (as of 2023 these are bot deprecated and no longer supported)
 
 ## Supports
 * All major PHP frameworks including Laravel & Symfony!
